@@ -1,0 +1,84 @@
+div {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* 컨테이너 박스 만들어 주기  */
+.container-1 {
+    border: 2px dashed red;
+
+    position: relative;
+}
+
+/* 포지션 먹이면 정렬 */
+.first {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+}
+
+.second {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+
+    position: absolute;
+
+    top: 50px;
+    left: 50px;
+}
+
+
+/* 포지션 먹이면, 빨간 실선 밖 */
+.third {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+    position: absolute;
+
+    top: 100px;
+    left: 100px;
+}
+
+/* 정가운데 배치하기 */
+
+.container-2 {
+    width: 300px;
+    height: 300px;
+    position: relative;
+/* 내부에 들어올 & 상대위치 지정 */
+}
+
+
+/* 이런식으로 포지션 이용해 사용 가능하지만 비추 */
+#center {
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+
+    position: absolute;
+
+    /* 0씩만 떨어질것임 */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* 정가운데 마진오토 */
+    margin: auto;
+}
+
+.fixed {
+    width: 500px;
+    /* 텍스트 얼라인 센터 = 텍스트 가운데 정렬 */
+    text-align: center;
+
+    /* fixed(고정) 요소는 화면(브라우저) 기준으로 배치됨
+    - 다른 요소와 겹칠 수 있다.
+    - 별도로 화면을 차지하려 하지는 않음 */
+    position: fixed;
+
+    /* 바텀 오른쪽 안쓰면 [위쪽으로 이동] 안보임. */
+    bottom: 50px;
+    right: 50px;
+}

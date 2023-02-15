@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Humanbumsuk';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Humanbumsuk.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#size-test > li:nth-child(1) { font-size: 24px; }
+#size-test > li:nth-child(2) { font-size: 18pt; }
+#size-test > li:nth-child(3) { font-size: 150%; }
+#size-test > li:nth-child(4) { font-size: 1.5em; }
+
+
+/*  크롬 브라우저 기준 
+    기본 글꼴 크기 : 16px
+*/
+
+/* font-weight */
+#weight-test > li {
+    font-size: 34px;
+}
+
+#weight-test > li:nth-child(1) { font-weight: 600; }
+#weight-test > li:nth-child(2) { font-weight: bold; }
+#weight-test > li:nth-child(3) { font-weight: bolder; }
+#weight-test > li:nth-child(4) { font-weight: 600; }
+#weight-test > li:nth-child(5) { 
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* font-family */
+
+.cls > li {
+    font-size: 24px;
+}
+
+#family-test1 > li:nth-child(1) {
+    /* 설치된 폰트일 경우 */
+    font-family: '궁서체'; 
+}
+
+#family-test2 > li:nth-child(2) {
+    font-family: '배달의민족체';
+    /* 없는 폰트인 경우 기본폰트로 설정 */
+}
+
+
+#family-test2 > li:nth-child(3) {
+    font-family: '배달의민족체', '굴림체';
+}
+
+/* 웹폰트 */
+/* 링크 태그를 이용한 방법 */
+
+#family-test2 > li:nth-child(1) {
+    font-family : 'Single day' , cursive;
+}
+
+/* 웹폰트 / import / font-face 중 하나만 이용해도 적용이 된다. */
+
+/* 단, @import의 경우 style 시트의 최상단에 작성하고 */
+
+/* font-family 구문을 그대로 사용하여야 함을 주의할 것!! */
+
+/* 글꼴은 가능하면 하나로 통합하는걸 추천 */
+
+#family-test2 > li:nth-child(2) {
+    font-family: 'Humanbumsuk';
+}
+
+#family-test2 > li:nth-child(3) {
+    font-family: 'Humanbumsuk';
+}
