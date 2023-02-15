@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/layout3.css">
+</head>
+
+<body>
+
+    <!-- 0215 진도 시작 09.레이아웃스타일3 ~ -->
+    <!-- layout3.css link 해주었음 -->
+    <pre>
+        <h1>요소 정렬 스타일(float / clear)</h1>
+        float(띄우다) : [요소를 띄워 좌/우로 정렬]하는 속성
+        clear : float으로 인해 [띄워져 있는 상태를 해제]하는 속성
+        (float 사용 시 겹침 문제를 해결)
+    </pre>
+
+    <h3>기본 형태</h3>
+    <div class="test">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>Hello</div>
+        <div>World</div>
+        <div>5</div>
+    </div>
+    <hr>
+
+
+    <h3>float : left;</h3>
+    <div class="test">
+        <div class="float-left">1</div>
+        <div class="float-left">2</div>
+        <div class="float-left">3</div>
+        <div class="float-left">4</div>
+        
+        <div class="clear">Hello</div>
+        <div class="clear">World</div>
+        <div class="float-left">5</div>
+        <div class="float-left">6</div>
+    </div>
+    <hr>
+
+    <hr>
+
+
+    <h3>float : right;</h3>
+
+    <div class="test">
+        <div class="float-right">1</div>
+        <div class="float-right">2</div>
+        <div class="float-right">3</div>
+        <div class="float-right">4</div>
+
+        <div class="clear">Hello</div>
+        <div class="clear">World</div>
+        <div class="float-right">5</div>
+        <div class="float-right">6</div>
+    </div>    
+    <hr>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <h2> float을 활용한 좌우 2분할</h2>
+
+    <div>
+        <div class="div-1 bg-1"></div>
+        <div class="div-1 bg-3"></div>
+    </div>
+
+    <h2>float을 이용한 4분할</h2>
+    <!-- 1행 -->
+    <div class="row">
+        <div class="div-1 bg-1"></div>
+        <div class="div-1 bg-2"></div>
+    </div>
+
+    <!-- 2행 -->
+    <div class="row">
+        <div class="div-1 bg-3"></div>
+        <div class="div-1 bg-4"></div>
+    </div>
+
+<!-- ------------------------ -->
+
+    <h2>예제</h2>
+    <!-- 1행 -->
+    <div class="row">
+        <div class="div-1 bg-1"></div>
+        <div class="div-1 bg-2"></div>
+    </div>
+
+    <!-- 2행 -->
+    <div class="row">
+        <div class="div-1 bg-3"></div>
+        <div class="div-1 bg-4"></div>
+    </div>
+
+    <div>
+        <div class="div-1 bg-1"></div>
+        <div class="div-1 bg-3"></div>
+    </div>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <br>
+    <br>
+    <br>
+<!-- 보라 정사각형 -->
+    <div class="container-3">
+<!-- 파 1 -->
+        <div class="row"></div>
+<!-- 노 1 -->
+            <div class="div-1">
+                <div class="row"></div> 
+                <div class="row"></div> 
+            </div>
+
+                <div class="div-1"><div>
+         </div>
+<!-- 파2 -->
+        <div class="row bg-3"></div>
+    </div>
+    
+    
+</body>
+</html>
