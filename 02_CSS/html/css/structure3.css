@@ -1,0 +1,57 @@
+div {
+    border: 1px solid black;
+}
+
+.content {
+    height: 5vh;
+}
+
+.main {
+    border: 1px solid red;
+    display: flex;
+    padding: 20px;
+}
+
+.main div{
+    border: 1px solid blue;
+    height: 20vh;
+    width: 50%;
+}
+
+.footer {
+    border: 1px black;
+    height: 10vh;
+}
+
+section {
+    display: flex;
+}
+
+.section {
+    display: flex;
+    border: 1px green;
+}
+
+.section div {
+    height: 10vh;
+    border: 1px solid hotpink;
+}
+
+.aside {
+    width: 50%;
+    border: 1px solid green;
+}
+
+.figure {
+    height : 10px;
+}
+
+.img {
+    height: 10vh;
+    border: 1px solid hotpink;
+}
+
+.figcaption {
+    height: 10vh;
+    border: 1px solid hotpink;
+}
