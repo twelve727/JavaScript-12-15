@@ -1,0 +1,107 @@
+* {
+    box-sizing : border-box;
+}
+
+body {
+    margin : 0;
+    padding : 0;
+}
+
+div {
+    border: 1px solid black;
+}
+
+/* ********************************************** */
+
+/* flex 주어야 오른쪽으로 가니 */
+.container {
+    display : flex;
+    height : 1000px;
+}
+
+/* 왼쪽 */
+/* flex-basis 차지할 공간을 뜻함 */
+.container div:first-child {
+    flex-basis: 20%;
+}
+
+/* 오른쪽 */
+/* flex-basis 차지할 공간을 뜻함 */
+.container div:last-child {
+    flex-basis: 80%;
+}
+
+
+/* 새로운 flex 부모가 되어야함 */
+.rightBox {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 헤더, 네비 */
+/* 오른쪽 박스의 flex-basis 차지공간 2개 10% */
+.rightBox > div:nth-child(1),
+.rightBox > div:nth-child(2) {
+    flex-basis: 10%;
+}
+
+/* 콘텐츠(주황) */
+.rightBox > div:nth-child(3) {
+    flex-basis: 80%;
+    background-color: orange;
+}
+
+/* 콘텐츠(주황)도 right처럼 새로운 부모지정됨 */
+.orangeBox {
+    display: flex;
+}
+
+/* 빨간/파초 박스 */
+.orangeBox > div:nth-child(1),
+.orangeBox > div:nth-child(2) {
+    flex-basis: 50%;
+}
+
+/* 빨간색 */
+.orangeBox > div:nth-child(1) {
+    background-color: red;
+}
+
+/* 파초박스 */
+.orangeBox > div:nth-child(2) {
+    /* 새로운 부모가 되어야함 */
+    display : flex;
+    flex-direction: column;
+}
+
+/* == 파초박스 */
+.blueGreenBox > div:nth-child(1) {
+    /* 파란박스 */
+    background-color: blue;
+    flex-basis: 40%;
+}
+
+  /* 초록박스 */
+.blueGreenBox > div:nth-child(2) {
+    background-color: green;
+    flex-basis: 60%;
+}
+
+.redBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.redBox div:nth-child(1),
+.redBox div:nth-child(2),
+.redBox div:nth-child(3),
+.redBox div:nth-child(4) {
+    flex-basis: 50%;
+    background-color: yellow;
+    scale: 0.8;
+}
+
+   /* ★ 똑같이 따라쳤는데, 박스 4개가 안떴었음
+    스케일 0.8은 필수 */
+
+    /* 마지막에 패딩주고 마진줬던건 부가적인 요소임 (생략가능) */
