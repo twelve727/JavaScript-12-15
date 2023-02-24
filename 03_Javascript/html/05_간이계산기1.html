@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_간이계산기1</title>
+    
+</head>
+
+<body>
+    <h2>간이 계산기 만들기</h2>
+
+    <form>
+        첫 번째 값 : <input type="number" name="num1"> <br>        
+        두 번째 값 : <input type="number" name="num2"> <br>
+
+        <button class="fa-solid fa-plus" onclick="plus()"> + </button>
+        <button class="fa-solid fa-minus" onclick="minus()"> - </button>
+        <button class="fa-solid fa-multi" onclick="multi()"> * </button>
+        <button class="fa-solid fa-div" onclick="div()"> / </button>
+        <button class="fa-solid fa-mod" onclick="mod()"> % </button>
+
+        <br><br>
+
+        계산 결과 : <span id="result"></span> 
+    </form>
+
+    <script src="/4_WebFront/03_Javascript/js/05_간이계산기1.js"></script>
+</body>
+</html>
