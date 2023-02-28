@@ -1,0 +1,19 @@
+/* (max)(min) height 최소 300 개념 해보기 */
+/* 블록 넘어가냐 안넘어가냐 차이 */
+.area {
+    width: 500px;
+    min-height: 300px;
+    border: 1px solid black;
+}
+
+.confirm {
+    color : green;
+    font-weight : bold;
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    font-family: '궁서';
+}
